@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andrew Munday</title>
   <style>
     body {
@@ -9,17 +10,44 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       font-family: sans-serif;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
     }
     h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
     p  { font-size: 1.5rem; color: #555; }
     .heart { color: red; }
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem 1.75rem;
+      max-width: 640px;
+    }
+    .links a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 2px;
+    }
+    .links a:hover { border-color: #333; }
   </style>
 </head>
 <body>
   <h1>Andrew Munday</h1>
   <p>I <span class="heart">♥</span> San Francisco</p>
+  <nav class="links">
+    <a href="https://www.doordash.com/">DoorDash</a>
+    <a href="https://future.co/">Future</a>
+    <a href="https://www.truemed.com/">TrueMed</a>
+    <a href="https://safewalking.org/">Safe Walking</a>
+    <a href="https://www.reyswithin.com/">REYS</a>
+    <a href="https://regisrangers.com/sports/mens-soccer">Regis Men's Soccer</a>
+    <a href="https://sfrecpark.org/1613/Bayview-Safety-Swim-Splash">Bayview Swim Splash</a>
+    <a href="https://academy.siprep.org/">SI Academy</a>
+  </nav>
 </body>
 </html>
